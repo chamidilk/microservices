@@ -1,3 +1,5 @@
+server:
+  port: 9001
 application:
   title: department service
   version: 1.0.0

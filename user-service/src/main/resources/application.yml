@@ -1,0 +1,19 @@
+server:
+  port: 9002
+application:
+  title: user service
+  version: 1.0.0
+spring:
+  #  datasource:
+  #    url: jdbc:h2:mem:mydb
+  #    username: sa
+  #    password: password
+  #    driverClassName: org.h2.Driver
+  jpa:
+    #    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        generate_statistics: true
+  h2:
+    console.enabled: true
