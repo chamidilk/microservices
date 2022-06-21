@@ -47,7 +47,7 @@ public class UserService {
         if (optionalUser.isPresent()) {
             User user = optionalUser.get();
 
-            DepartmentDto departmentDto = departmentApi.getForObject("http://127.0.0.1:9001/departments/" + user.getDepartmentId(), DepartmentDto.class);
+            DepartmentDto departmentDto = departmentApi.getForObject("http://DEPARTMENT-SERVICE/departments/" + user.getDepartmentId(), DepartmentDto.class);
 
             return UserResponseDto.builder()
                     .userDto(UserDto.builder()
